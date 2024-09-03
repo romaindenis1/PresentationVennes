@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     color: white;
+    background-image:url(./etml-background.png);
 }
 
 .container {
@@ -34,7 +35,10 @@ body {
 
 .navigation a {
     margin: 0 15px;
-    color: black;
+    color: white;
+    background-color: #cc5848;
+    border: #cc5848 15px solid;
+    border-radius: 20px;
     text-decoration: none;
     font-weight: bold;
 }
@@ -74,4 +78,7 @@ h1 {
 
 .description p {
     line-height: 1.6;
+}
+.navigation{
+    
 }
