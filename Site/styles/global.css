@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     color: white;
-    background-image:url(./etml-background.png);
+    background-image:url(../images/etml-background.png);
 }
 
 .container {
@@ -23,7 +23,6 @@ body {
 }
 
 .header {
-    padding-top: -15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -80,6 +79,29 @@ h1 {
 .description p {
     line-height: 1.6;
 }
-.navigation{
-    
+iframe{
+    align-self: center;
+    justify-content: center;
+    justify-self: center;
+    padding-left: 25%;
+
 }
+.video-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .video-wrapper::after {
+    display: block;
+    content: "";
+    padding-top: 56.25%;
+  }
+  
+  .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+  }
