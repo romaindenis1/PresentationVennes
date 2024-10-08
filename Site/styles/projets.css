@@ -1,0 +1,20 @@
+body {
+   background: linear-gradient(120deg, rgba(43,83,143,1) 0%, rgba(124,76,184,1) 100%);
+   
+}
+.main-container {
+
+  }
+  .image-container {
+  background: linear-gradient(160deg, rgba(53,128,83,1) 0%,rgba(115,40,33,1) 35%, rgba(102,32,46,1) 100%);
+    padding: 20px;
+    margin:50px;
+    box-shadow: 0 5px 8px rgba(0, 5, 0, 0.3);
+    border-radius: 10px;
+   text-align:center;
+  }
+  img {
+   padding:5px;
+    height: auto;
+    border-radius: 10px;
+  }

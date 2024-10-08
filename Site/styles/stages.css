@@ -1,0 +1,35 @@
+.mid-button{
+    text-align: center;
+
+    margin: 0 15px;
+    color: white;
+    background: rgb(184,111,76);
+    background: linear-gradient(103deg, rgba(184,111,76,1) 0%, rgba(143,43,64,1) 53%);  
+    border-radius: 20px;
+}
+.mid-button p{
+    font-size: large;
+    line-height: 1.5;
+}
+
+.bot-button{
+    text-align: center;
+    color: white;
+    background: rgb(184,111,76);
+    background: linear-gradient(103deg, rgba(184,111,76,1) 0%, rgba(143,43,64,1) 53%);
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+body{
+    background: rgb(143,43,64);
+    background: linear-gradient(103deg, rgba(143,43,64,1) 0%, rgba(143,43,64,1) 35%, rgba(184,111,76,1) 87%);
+}
+h1{
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
