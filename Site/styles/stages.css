@@ -10,6 +10,9 @@
 .mid-button p{
     font-size: large;
     line-height: 1.5;
+    padding-left: 50px;
+    padding-right: 50px;
+   
 }
 
 .bot-button{
