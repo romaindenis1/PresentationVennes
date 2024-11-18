@@ -8,8 +8,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding : 2%;
+  
   background-color: rgba(34, 23, 16, 0.6);
+  height: 90px;
 }
 
 .main-container {
@@ -48,4 +49,7 @@ rgb(89, 33, 115) 35%, rgb(211, 93, 117) 100%);
 .image-container p {
   font-size: 1rem;
   color: #e0e0e0;
+}
+.navigation{
+  height: 90px;
 }
