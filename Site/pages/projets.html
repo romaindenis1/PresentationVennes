@@ -3,11 +3,11 @@
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>ETML - Projets</title>
+      <title>My Website</title>
       <link rel="stylesheet" href="../styles/global.css">
       <link rel="stylesheet" href="../styles/projets.css">
 </head>
-
+ 
 <body>
   <header class="main-header">
     <div class="logo">
@@ -24,41 +24,41 @@
 </header>
 <h1>Les Projets</h1>
       <div class="main-container">
-
+ 
             <div tag="1"class="image-container" onclick="openPanel('P_122 - Power Shell', '../images/PowerShell.png', 'Projet PowerShell - Concevoir un script PowerShell, pour collecter des données d’un ordinateur.')">
                   <h2>P_122 - Power Shell</h2>
                   <img src="" alt="">
-                  <p>Projet PowerShell - Concevoir un script PowerShell, 
+                  <p>Projet PowerShell - Concevoir un script PowerShell,
                         pour collecter des données d’un ordinateur.</p>
             </div>
      
             <div class="image-container" onclick="openPanel('P_SYS - 216 - SmartHome', '../images/image (1).png', 'Le projet consiste à mettre en place une solution complète afin d’avoir tous les éléments possibles pour une maison connectée à travers un kit prototype « Smart Home Kit ».')">
-                  <h2>P_SYS - 216 - SmartHome</h2> 
+                  <h2>P_SYS - 216 - SmartHome</h2>
                   <img src="C:\Users\yosnademo\Documents\GitHub\PresentationVennes\Site\images\image (1).pngs" alt="">
-                  <p>Le projet consiste à mettre en place une solution complète afin d’avoir tous les éléments possibles 
-                        pour une maison connectée à travers un kit prototype « Smart Home Kit ». </p>
+                  <p>Le projet consiste à mettre en place une solution complète afin d’avoir tous les éléments possibles
+                        pour une maison connectée à travers un kit prototype « Smart Home Kit ». </p>
             </div>
-
+ 
             <div class="image-container" onclick="openPanel('P_Prog : Rendeur de monnaie', '../images/image.png', 'Petit programme permettant d’afficher le nombre minimum de billets et pièces de monnaie en Frs, pour un montant donné par l’utilisateur.')">
                   <h2>P_Prog : Rendeur de monnaie</h2>
                   <img src="C:\Users\yosnademo\Documents\GitHub\PresentationVennes\Site\images\image.png" alt="">
-                  <p>Petit programme permettant d’afficher le nombre minimum de billets et 
+                  <p>Petit programme permettant d’afficher le nombre minimum de billets et
                         de pièces de monnaie en Frs, pour un montant donné par l’utilisateur.</p>
             </div>
-
+ 
             <div class="image-container" onclick="openPanel('P_WebDB : Créer et publier un site Web statique', '../images/image (3).png', 'Implémentation d\'un site web statique en HTML5/CSS3')">
                   <h2>P_WebDB : Créer et publier un site Web statique</h2>
                   <img src="C:\Users\yosnademo\Documents\GitHub\PresentationVennes\Site\images\image (3).png" alt="">
                   <p>Implémentation d'un site web statique en HTML5/CSS3</p>
             </div>
-
-            <div class="image-container" onclick="openPanel('P_Secu : Gestionnaire de mot de passe', '../images/image (4).png', 'Développer un gestionnaire de mots de passe sécurisé.')"> 
+ 
+            <div class="image-container" onclick="openPanel('P_Secu : Gestionnaire de mot de passe', '../images/image (4).png', 'Développer un gestionnaire de mots de passe sécurisé.')">
                   <h2>P_Secu : Gestionnaire de mot de passe</h2>
                   <img src="C:\Users\yosnademo\Documents\GitHub\PresentationVennes\Site\images\image (4).png" alt="">
                   <p>Dans ce projet vous allez développer un gestionnaire de mots de passe sécurisé</p>
             </div>
-
-            <div class="image-container" 
+ 
+            <div class="image-container"
             onclick="openPanel('P_WebDB : Modéliser un site web', '../images/image (5).png', 'Réaliser la modélisation d’un site web : collecte des données, élaboration d\'un MCD, transformation du MCD en MLD.')">
                   <h2>P_WebDB : Modéliser un site web</h2>
                   <img src="C:\Users\yosnademo\Documents\GitHub\PresentationVennes\Site\images\image (5).png" alt="">
@@ -66,7 +66,7 @@
                          MCD, transformation du MCD en MLD, normalisation et représentation</p>
             </div>
       </div>          
-        
+       
           <!-- Slide Panel -->
   <div id="overlay" class="overlay" onclick="closePanel()"></div>
   <div id="slidePanel" class="slide-panel">
@@ -75,16 +75,16 @@
     <img id="panelImage" src="" alt="">
     <p id="panelDescription"></p>
   </div>
-        
+       
           <script>
 function openPanel(title, imgSrc, description) {
   document.getElementById('panelTitle').textContent = title;
   document.getElementById('panelImage').src = imgSrc;
   document.getElementById('panelDescription').textContent = description;
-
+ 
   document.getElementById('slidePanel').classList.add('active');
   document.getElementById('overlay').classList.add('active');
-
+ 
   // Optional: Delay the text and image visibility slightly
   setTimeout(() => {
     document.getElementById('panelTitle').style.opacity = 1;
@@ -92,18 +92,19 @@ function openPanel(title, imgSrc, description) {
     document.getElementById('panelImage').style.opacity = 1;
   }, 300); // Adjust the delay to your liking
 }
-
+ 
 function closePanel() {
   document.getElementById('slidePanel').classList.remove('active');
   document.getElementById('overlay').classList.remove('active');
-
+ 
   // Reset the opacity for the elements
   document.getElementById('panelTitle').style.opacity = 0;
   document.getElementById('panelDescription').style.opacity = 0;
   document.getElementById('panelImage').style.opacity = 0;
 }
-
-
+ 
+ 
           </script>
 </body>
 </html>
+ 

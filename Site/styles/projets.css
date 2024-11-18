@@ -1,57 +1,257 @@
 body {
-   background: linear-gradient(120deg, rgb(73, 106, 156) 10%, rgb(133, 94, 182) 70%
-   ,rgb(213, 199, 231) );
-  margin: 0;
-  padding: 0;
+  background: linear-gradient(120deg, rgb(73, 106, 156) 10%, rgb(133, 94, 182) 70%
+  ,rgb(213, 199, 231) );
+ margin: 0;
+ padding: 0;
 }
 .main-header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  
-  background-color: rgba(34, 23, 16, 0.6);
-  height: 90px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding : 2%;
+ background-color: rgba(34, 23, 16, 0.6);
 }
 
 .main-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 50px;
-  padding: 40px;
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ gap: 50px;
+ padding: 40px;
 }
 
 .image-container {
-  background: linear-gradient(160deg, rgb(51, 50, 114) 0%, 
+ background: linear-gradient(160deg, rgb(51, 50, 114) 0%,
 rgb(89, 33, 115) 35%, rgb(211, 93, 117) 100%);
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  padding: 20px;
-  text-align: center;
-  transition: transform 0.9s, box-shadow 0.3s;
+ border-radius: 15px;
+ box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+ padding: 20px;
+ text-align: center;
+ transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .image-container:hover {
-  transform: translateY(-30px);
-  transform: scale(1.2);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-  
+ transform: translateY(-30px);
+ box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
 .image-container img {
-  max-width: 100%;
-  border-radius: 10px;
-  margin-bottom: 15px;
+ max-width: 100%;
+ border-radius: 10px;
+ margin-bottom: 15px;
 }
 
 .image-container h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+ font-size: 1.5rem;
+ margin-bottom: 10px;
 }
 
 .image-container p {
-  font-size: 1rem;
-  color: #e0e0e0;
+ font-size: 1rem;
+ color: #e0e0e0;
 }
-.navigation{
-  height: 90px;
+
+ /* Sliding panel */
+ .slide-panel {
+   display: none; /* close panel by default */
+   position: fixed;
+   top: 0;
+   right: 0;
+   width: 400px;
+   height: 100%;
+   background-color: #f4f4f4;
+   box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+   overflow-y: auto;
+   padding: 20px;
+   z-index: 1000;
+   font-family: 'Arial', sans-serif;
+ }
+
+ .slide-panel.active {
+   display: block; /* show panel on activation */
+   opacity: 1;
+   animation: slideIn 0.5s ease-in-out; /* smooth slide-in effect */
+ }
+
+ .slide-panel.open {
+   right: 0;
+ }
+
+ .slide-panel h2 {
+   margin-top: 0;
+   color: #292626;
+ }
+
+ .slide-panel img {
+   width: 100%;
+   height: auto;
+   border-radius: 10px;
+   margin-bottom: 15px;
+ }
+
+
+ @keyframes slideIn {
+   from {
+     transform: translateX(100%);
+     opacity: 0;
+   }
+   to {
+     transform: translateX(0);
+     opacity: 1;
+   }
+ }
+
+ @keyframes slideOut {
+   from {
+     transform: translateX(0);
+     opacity: 1;
+   }
+   to {
+     transform: translateX(100%);
+     opacity: 0;
+   }
+ }
+
+ .close-panel {
+   background-color: transparent;
+   border: none;
+   font-size: 24px;
+   color: #333;
+   cursor: pointer;
+   float: right;
+   margin-bottom: 20px;
+ }
+
+ .overlay {
+   display: none;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.5);
+   z-index: 999;
+   opacity: 0;
+   transition: opacity 0.5s ease;
+ }
+ .overlay.active {
+   display: block;
+   opacity: 1;
+ }
+
+ /* Content inside the panel */
+#panelTitle, #panelDescription {
+ opacity: 0;
+ animation: fadeIn 1s ease-in forwards; /* Adding a fade-in for text */
+}
+
+#panelImage {
+ opacity: 0;
+ animation: fadeIn 1.5s ease-in forwards; /* Delay image fade-in */
+}
+
+@keyframes fadeIn {
+ from {
+   opacity: 0;
+ }
+ to {
+   opacity: 1;
+ }
+}
+
+.panel-content {
+ padding: 20px;
+ text-align: center;
+}
+
+.panel-content img {
+ width: 100%;
+ height: auto;
+ margin-bottom: 15px;
+ border-radius: 8px;
+}
+
+ #panelDescription {
+   color: #555; /* Цвет текста */
+   line-height: 1.6; /* Межстрочный интервал для лучшей читабельности */
+ }
+
+
+ img {
+   max-width: 100%; /* Подгонка изображения по ширине панели */
+   border-radius: 8px; /* Закругленные углы для изображений */
+   margin-bottom: 15px; /* Отступ снизу */
+ }.detail-panel {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 80%;
+   max-width: 600px;
+   background: white;
+   border-radius: 10px;
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+   opacity: 0;
+   visibility: hidden;
+   transition: opacity 0.4s ease, visibility 0.4s ease;
+   z-index: 1000;
+}
+
+.detail-panel.visible {
+   opacity: 1;
+   visibility: visible;
+}
+
+.panel-content {
+   padding: 20px;
+   text-align: center;
+}
+
+.panel-content img {
+   width: 100%;
+   height: auto;
+   margin-bottom: 15px;
+   border-radius: 8px;
+}
+
+.panel-content button {
+   padding: 10px 20px;
+   background-color: #007BFF;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   margin-top: 10px;
+}
+
+.panel-content button:hover {
+   background-color: #0056b3;
+}
+/* Button Style */
+.panel-content button {
+ padding: 10px 20px;
+ background-color: #007BFF;
+ color: white;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+ margin-top: 10px;
+}
+
+.panel-content button:hover {
+ background-color: #0056b3;
+}
+/* Smooth entrance for panels */
+@keyframes panel-slide-in {
+   from {
+       transform: translate(-50%, -60%);
+       opacity: 0;
+   }
+   to {
+       transform: translate(-50%, -50%);
+       opacity: 1;
+   }
+}
+
+.detail-panel.visible {
+   animation: panel-slide-in 0.4s ease forwards;
 }
