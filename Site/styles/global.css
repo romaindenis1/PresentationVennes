@@ -53,8 +53,10 @@ list-style-type: none;
 display: inline-block;
 }
 .navigation li {
-display: inline-block;
+    display: inline-block;
+    
 }
+
 ul{
     padding: 0px;
 }
@@ -67,9 +69,14 @@ ul{
     border-radius: 20px;
     text-decoration: none;
     font-weight: bold; 
+    box-shadow: 0 5px 8px rgba(0, 5, 0, 0.3);
+    transition: transform 0.9s, box-shadow 0.3s;
 }
+
 .navigation a:hover {
     background-color: #92303e;
+    transform: scale(1.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
   .main-header {
     display: flex;
