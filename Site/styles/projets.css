@@ -5,7 +5,8 @@ body {
  padding: 0;
 }
 .navigation{
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .main-header{
  display: flex;
@@ -13,8 +14,11 @@ body {
  align-items: center;
  padding : 20px;
  background-color: rgba(34, 23, 16, 0.6);
+ 
 }
-
+h1{
+  margin-bottom: 40px;
+}
 .main-container {
  display: grid;
  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
