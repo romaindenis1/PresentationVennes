@@ -4,11 +4,14 @@ body {
  margin: 0;
  padding: 0;
 }
+.navigation{
+  padding: 20px;
+}
 .main-header{
  display: flex;
  justify-content: space-between;
  align-items: center;
- padding : 2%;
+ padding : 20px;
  background-color: rgba(34, 23, 16, 0.6);
 }
 
@@ -26,12 +29,13 @@ rgb(89, 33, 115) 35%, rgb(211, 93, 117) 100%);
  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
  padding: 20px;
  text-align: center;
- transition: transform 0.3s, box-shadow 0.3s;
+ transition: transform 0.7s, box-shadow 0.3s;
 }
 
 .image-container:hover {
- transform: translateY(-30px);
+ 
  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+ transform: scale(1.2);
 }
 
 .image-container img {
