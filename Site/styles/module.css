@@ -2,6 +2,7 @@ body {
     background: linear-gradient(120deg,rgba(143, 43, 64,1)  0%, rgba(184, 111, 76,1) 100%);
     display: flex;
     flex-direction: column;
+    height: 952px;
 }
 .main-container {
     display: grid;

@@ -47,6 +47,7 @@ body {
     align-items: center;
     justify-items: center;
     display: flex;
+    
 }
 .navigation ul {
 list-style-type: none;
