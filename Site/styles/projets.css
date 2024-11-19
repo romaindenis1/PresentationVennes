@@ -1,6 +1,6 @@
 body {
-  background: linear-gradient(120deg, rgb(73, 106, 156) 10%, rgb(133, 94, 182) 70%
-  ,rgb(213, 199, 231) );
+  background: linear-gradient(150deg, rgb(61, 60, 132) 0%, rgb(100, 62, 146) 35%
+  ,rgb(188, 174, 206) );
  margin: 0;
  padding: 0;
 }
@@ -30,9 +30,9 @@ rgb(89, 33, 115) 35%, rgb(211, 93, 117) 100%);
 }
 
 .image-container:hover {
- transform: translateY(-30px);
- box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-}
+  transform: translateY(-30px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+ } 
 
 .image-container img {
  max-width: 100%;

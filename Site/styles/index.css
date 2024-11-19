@@ -1,61 +1,67 @@
-body{
+body {
     margin: 0;
-    height: 100vh;
     font-family: Arial, sans-serif;
-    background:url(../images/etml-background.png) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    color: white;
+    background: url(../images/etml-background.png) no-repeat center center fixed;
     background-size: cover;
-    color:white;
 }
-.container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
-
-.background-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
-
-
-
 .content {
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    margin: auto;
+    margin: 20px auto;
+    padding: 0 20px;
+    max-width: 1200px;
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 20px;
 }
 
-.video-content {
-    width: 80%;
+.video-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
 }
-.video-wrapper {position: relative;padding-bottom: 56.25%;padding-top: 30px;height: 0;overflow: hidden; margin-top: 20px}
-.video-wrapper iframe {position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    border: 2px solid rgb(59, 69, 212); /* Для теста */
+    border-radius: 20px ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background: black;
+}
+
+.video-wrapper::after {
+    content: "";
+    display: block;
+    padding-top: 56.25%; /* 16:9 */
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 .description {
-    padding:20px;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 700px;
 }
 
 .description h2 {
+    font-size: 1.8em;
     margin-bottom: 10px;
 }
 
 .description p {
+    font-size: 1em;
     line-height: 1.6;
 }
+
