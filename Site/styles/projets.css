@@ -8,10 +8,13 @@ body {
  display: flex;
  justify-content: space-between;
  align-items: center;
- padding : 2%;
+ 
+
  background-color: rgba(34, 23, 16, 0.6);
 }
-
+nav.navigation{
+  padding: 15px;
+}
 .main-container {
  display: grid;
  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
