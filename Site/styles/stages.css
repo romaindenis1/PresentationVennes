@@ -14,7 +14,7 @@
     font-size: large;
     padding-left: 20px; 
     padding-right: 20px; 
-    padding-bottom: 3em; 
+    padding-bottom: 2em; 
 }
 
 .bot-button{
@@ -69,3 +69,16 @@ h1 {
 .mid-content{
     height: 750px;
 }
+.footer {
+    background: linear-gradient(120deg, rgb(61, 60, 132), rgb(100, 62, 146));
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    border-radius: 20px;
+  }
