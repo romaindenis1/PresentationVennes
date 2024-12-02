@@ -21,7 +21,7 @@ nav.navigation {
   gap: 40px; /* Adds space between items */
   padding: 140px;
   justify-items: center; /* Centers the items horizontally */
-  align-items: ;
+  align-items:center ;
 }
 
 .image-container {
