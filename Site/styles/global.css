@@ -152,3 +152,34 @@ h1{
     width: 100%;
     height: 100%;
 }
+.footer {
+    background: linear-gradient(120deg, rgb(61, 60, 132), rgb(100, 62, 146));
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  
+  .footer-text {
+    margin: 5px 0;
+    font-size: 1rem;
+    font-weight: bold;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
