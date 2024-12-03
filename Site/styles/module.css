@@ -62,15 +62,11 @@ img {
     grid-column: 1 / 6;
     text-align: center; 
   
-  }
-  
+}
   #intranet .module-link {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.889); 
-  }
-  
-  
-
+}
 h1{
     margin-left: 7%;
     margin-bottom: 20px;
