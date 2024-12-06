@@ -1,0 +1,29 @@
+body{
+    background-color: #F2E5BF;
+
+}
+p{
+    color: black;
+}
+main{
+    display: flex;
+    text-align: center;
+    gap: 70px;
+    justify-content: space-around;
+}
+img{
+    height: 424px;
+}
+#antoine, #yosef,#romain{
+    padding: 25px;
+    background-color:#cc5848 ;
+    border-radius: 20px;
+}
+h2{
+    color: black;
+}
+h1{
+    color: black;
+    margin: 0;
+    padding-bottom: 20px;
+}

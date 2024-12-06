@@ -157,7 +157,7 @@ h1{
     padding: 20px;
     position: relative;
     bottom: 0;
-    width: 100%;
+    width: 97.9%;
     font-family: 'Arial', sans-serif;
     letter-spacing: 1px;
     margin-top: 40px;
@@ -178,3 +178,6 @@ h1{
       opacity: 1;
     }
 }  
+a{
+    text-decoration: none;
+}
